@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ProjetGenieLog
+{
+    class Utilisateur
+    {
+        public string Nom;
+        public string Prenom;
+
+        public Utilisateur()
+        {
+            Nom = "";
+            Prenom = "";
+        }
+
+        public Utilisateur(string nom, string prenom)
+        {
+            Nom = nom;
+            Prenom = nom;
+        }
+    }
+}
