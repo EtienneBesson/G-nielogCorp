@@ -1,0 +1,212 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace ProjetGenieLog
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
+            textBox10.Visible = false;
+
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox8.Visible = false;
+            pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
+
+
+            Retour.Visible = false;
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
+            textBox10.Visible = false;
+
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox8.Visible = false;
+            pictureBox9.Visible = false;
+            pictureBox10.Visible = false; 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
+            textBox10.Visible = false;
+
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox8.Visible = false;
+            pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
+
+            Retour.Visible = false;
+            TestMemo.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Memorisation memo = new Memorisation(20, 10);
+            pictureBox1.ImageLocation = memo.ListeTest[0].Image;
+            pictureBox2.ImageLocation = memo.ListeTest[1].Image;
+            pictureBox3.ImageLocation = memo.ListeTest[2].Image;
+            pictureBox4.ImageLocation = memo.ListeTest[3].Image;
+            pictureBox5.ImageLocation = memo.ListeTest[4].Image;
+            pictureBox6.ImageLocation = memo.ListeTest[5].Image;
+            pictureBox7.ImageLocation = memo.ListeTest[6].Image;
+            pictureBox8.ImageLocation = memo.ListeTest[7].Image;
+            pictureBox9.ImageLocation = memo.ListeTest[8].Image;
+            pictureBox10.ImageLocation = memo.ListeTest[9].Image;
+            textBox1.Text = " " + memo.ListeTest[0].NumeroJeu;
+            textBox2.Text = " " + memo.ListeTest[1].NumeroJeu;
+            textBox3.Text = " " + memo.ListeTest[2].NumeroJeu;
+            textBox4.Text = " " + memo.ListeTest[3].NumeroJeu;
+            textBox5.Text = " " + memo.ListeTest[4].NumeroJeu;
+            textBox6.Text = " " + memo.ListeTest[5].NumeroJeu;
+            textBox7.Text = " " + memo.ListeTest[6].NumeroJeu;
+            textBox8.Text = " " + memo.ListeTest[7].NumeroJeu;
+            textBox9.Text = " " + memo.ListeTest[8].NumeroJeu;
+            textBox10.Text = " " + memo.ListeTest[9].NumeroJeu;
+
+            textBox1.Visible = true;
+            textBox2.Visible = true;
+            textBox3.Visible = true;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            textBox6.Visible = true;
+            textBox7.Visible = true;
+            textBox8.Visible = true;
+            textBox9.Visible = true;
+            textBox10.Visible = true;
+
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = true;
+            pictureBox6.Visible = true;
+            pictureBox7.Visible = true;
+            pictureBox8.Visible = true;
+            pictureBox9.Visible = true;
+            pictureBox10.Visible = true;
+
+            TestMemo.Visible = false;
+            Retour.Visible = true;
+        }
+
+        private void MaskAll()
+        {
+            textBox1.Visible = false;
+            textBox2.Visible = false;
+            textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
+            textBox10.Visible = false;
+
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox7.Visible = false;
+            pictureBox8.Visible = false;
+            pictureBox9.Visible = false;
+            pictureBox10.Visible = false;
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    }
+}
+
