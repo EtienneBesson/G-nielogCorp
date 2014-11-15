@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ProjetGenieLog
+{
+    class Association
+    {
+        private string _numeroImage;
+
+        public string Image
+        {
+            get { return _numeroImage; }
+            set { _numeroImage = value; }
+        }
+        
+        private int _numeroJeu;
+
+        public int NumeroJeu
+        {
+            get { return _numeroJeu; }
+            set { _numeroJeu = value; }
+        }
+
+        public Association()
+        {
+        }
+
+    }
+}
