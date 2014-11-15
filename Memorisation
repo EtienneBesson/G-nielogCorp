@@ -1,0 +1,153 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ProjetGenieLog
+{
+    
+
+    class Memorisation
+    {
+        public List<string> RepertoireImage = new List<string> { "Images\\1.jpg", "Images\\2.jpg", "Images\\3.jpg", "Images\\4.jpg", "Images\\5.jpg", 
+            "Images\\6.jpg", "Images\\7.jpg", "Images\\8.jpg", "Images\\9.jpg", "Images\\10.jpg" };
+        public int Temps;
+        public int NbSignes;
+
+
+        private List<Association> listeTest = new List<Association> {};
+
+        public List<Association> ListeTest
+        {
+            get { return listeTest; }
+            set { listeTest = value; }
+        }
+        
+
+        public Memorisation(int temps, int nbSignes)
+        {
+            Temps = temps;
+            NbSignes = nbSignes;
+            RemplirListe(nbSignes);
+        }
+
+         // Remplis image + numero dans un tableau en essayant d'avoir à chaque
+            // nouveau test une disposition d'image différentes
+        public void RemplirListe(int nbSignes)
+        {
+
+            List<int> entier = new List<int> {};
+
+            Association association1 = new Association();
+            Association association2 = new Association();
+            Association association3 = new Association();
+            Association association4 = new Association();
+            Association association5 = new Association();
+            Association association6 = new Association();
+            Association association7 = new Association();
+            Association association8 = new Association();
+            Association association9 = new Association();
+            Association association10 = new Association();
+
+            ListeTest.Add(association1);
+            ListeTest.Add(association2);
+            ListeTest.Add(association3);
+            ListeTest.Add(association4);
+            ListeTest.Add(association5);
+            ListeTest.Add(association6);
+            ListeTest.Add(association7);
+            ListeTest.Add(association8);
+            ListeTest.Add(association9);
+            ListeTest.Add(association10);
+
+
+
+            /* Random random1 = new Random();
+
+                int valeur1 = random1.Next(0, 10);
+                ListeTest[0].Image = RepertoireImage[valeur1];
+
+           Random random2 = new Random();
+
+                int valeur2 = random1.Next(0, 9);
+                ListeTest[1].Image = RepertoireImage[valeur2];
+
+            Random random3 = new Random();
+
+                int valeur3 = random1.Next(0, 8);
+                ListeTest[2].Image = RepertoireImage[valeur3];
+
+            Random random4 = new Random();
+
+                 int valeur4 = random1.Next(0, 7);
+                ListeTest[3].Image = RepertoireImage[valeur4];
+
+            Random random5 = new Random();
+
+                 int valeur5 = random1.Next(0, 6);
+                ListeTest[4].Image = RepertoireImage[valeur5];
+
+            Random random6 = new Random();
+
+                 int valeur6 = random1.Next(0, 5);
+                ListeTest[5].Image = RepertoireImage[valeur6];
+
+            Random random7 = new Random();
+
+                 int valeur7 = random1.Next(0, 4);
+                ListeTest[6].Image = RepertoireImage[valeur7];
+
+            Random random8 = new Random();
+
+                 int valeur8 = random1.Next(0, 3);
+                ListeTest[7].Image = RepertoireImage[valeur8];
+
+            Random random9 = new Random();
+
+                 int valeur9 = random1.Next(0, 2);
+                ListeTest[8].Image = RepertoireImage[valeur9];
+
+            Random random10 = new Random();
+
+                 int valeur10 = random10.Next(0, 1);
+                ListeTest[9].Image = RepertoireImage[valeur10]; */
+
+
+            List<int> entiers = new List<int> { };
+            for (int i = 0; i < nbSignes; i++)
+            {
+                entiers.Add(i);
+            }
+                for (int i = 0; i < nbSignes; i++)
+                {
+                    Random random = new Random();
+                    int valeur = random.Next(0, 10-i);
+                    ListeTest[i].Image = RepertoireImage[entiers[valeur]];
+
+                    entiers.RemoveAt(valeur);
+                }
+
+
+                List<int> entier2 = new List<int> { };
+                for (int i = 0; i < 100; i++)
+                {
+                    entier2.Add(i);
+                }
+
+                int valeur2 = 37;
+                for (int i = 0; i < 10; i++)
+                {
+                    Random random = new Random();
+                    Random random1 = new Random(); 
+                    
+                   valeur2 = random.Next(0, Math.Abs(100 - 19 * i));
+                   ListeTest[i].NumeroJeu = entier2[valeur2];
+
+                    entier2.RemoveAt(valeur2);
+                }
+            
+            }
+        }
+    }
+    
+
